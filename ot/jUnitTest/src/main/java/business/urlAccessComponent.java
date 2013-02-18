@@ -135,8 +135,8 @@ public class urlAccessComponent {
 //          System.out.println(datetime);
 //          System.out.println(System.currentTimeMillis() / 1000L);
           
-          return xmlString3.trim();
-          //return new String(Base64.encodeBase64(xmlString3.trim().getBytes()));
+          //return xmlString3.trim();
+          return new String(Base64.encodeBase64(xmlString3.trim().getBytes()));
 	  }
 	  
 	  private static String convertToMD5(String clear) throws Exception {
