@@ -39,7 +39,7 @@ public class urlAccessComponent {
 		  String hostname = "localhost";
 		  String hostportnumber = "8080";
 		  String appName = "piae";
-		  String viewer = "visorexpediente";
+		  String viewer = "visorexpedientes";
 		  String serviceName = "carga";
 		  String htmExtension = ".htm";
 		  
@@ -89,7 +89,7 @@ public class urlAccessComponent {
           String pwd = "instalador";
           
           
-        //Para validar el acceso por tiempo expirado
+          //Para validar el acceso por tiempo expirado
           datetime = String.valueOf((System.currentTimeMillis() / 1000L));
           
           String urlAuthinfo = String.format("%s#%s#%s#%s#%s", idapli, codexp, coduni, pwd, String.valueOf(datetime));
@@ -155,4 +155,6 @@ public class urlAccessComponent {
 		  }
 		  return h.toString();
 	  }
+	  
+	  
 }
